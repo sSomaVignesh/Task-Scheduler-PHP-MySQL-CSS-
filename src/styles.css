@@ -1,0 +1,141 @@
+/* styles.css – Task Scheduler UI */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Containers */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.2s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button.danger {
+    background: #dc3545;
+}
+button.danger:hover {
+    background: #a71d2a;
+}
+button.secondary {
+    background: #6c757d;
+}
+button.secondary:hover {
+    background: #565e64;
+}
+
+/* Messages */
+.error {
+    color: #dc3545;
+    margin-top: 10px;
+}
+.success {
+    color: #28a745;
+    margin-top: 10px;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 20px;
+}
+nav a {
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+table th {
+    background: #f1f1f1;
+}
+
+/* Task row colors */
+.row-red { background: #f8d7da; }     /* Urgent */
+.row-yellow { background: #fff3cd; }  /* Approaching */
+.row-white { background: #ffffff; }   /* Safe */
