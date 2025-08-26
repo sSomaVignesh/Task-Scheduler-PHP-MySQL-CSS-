@@ -26,4 +26,9 @@ This project helps users manage tasks efficiently by setting deadlines, updating
 
 ## 🚀 How to Run  
 1. Clone the repository  
+```bash
    git clone https://github.com/sSomaVignesh/Task-Scheduler-PHP-MySQL-CSS-.git
+```
+2. Import the SQL file into your MySQL database.
+3. Update the database connection details in config.php.
+4. Run the project on a local server (e.g., XAMPP, WAMP).
